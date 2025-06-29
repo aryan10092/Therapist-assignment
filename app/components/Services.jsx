@@ -23,7 +23,7 @@ export default function Services() {
   ]
 
   return (
-   <section id="services" className="py-24 bg-gradient-to-br from-gray-50 to-blue-gray-50">
+   <section id="services" className="py-24 bg-gray-200">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-20">
 
