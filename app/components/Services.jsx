@@ -21,7 +21,10 @@ export default function Services() {
       description: "Second-generation individuals in immigrant families, born in the U.S. to at least one parent born abroad, often navigate the complexities of multiple cultures and diverse expectations. This experience can bring challenges such as feeling like a foreigner in your own country and navigating strained family relationships. Therapy offers a supportive space to explore and process this unique aspect of your identity."
     }
   ]
-
+ const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' })
+    setMobileMenuOpen(false) }
+  
   return (
    <section id="services" className="py-24 bg-gray-200">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -120,13 +123,13 @@ export default function Services() {
       </div>
 
       <div className="text-center mt-16">
-        <a 
-       // onClick={() => scrollToSection('contact')} 
-        href='#contact'
+        <button 
+        onClick={() => scrollToSection('contact')} 
+        //href='#contact'
           className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-10 py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-lg font-semibold transform hover:scale-105"
         >
           Schedule Your First Session
-        </a>
+        </button>
       </div>
     </div>
   </section>
