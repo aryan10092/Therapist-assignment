@@ -96,7 +96,7 @@ export default function Contact() {
 
   if (isSubmitted) {
     return (
-      <section id="contact" className="section-padding bg-white">
+      <section id="contact" className="section-padding bg-gray-200">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
 
