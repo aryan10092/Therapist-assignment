@@ -120,12 +120,13 @@ export default function Services() {
       </div>
 
       <div className="text-center mt-16">
-        <Button 
-          onClick={() => scrollToSection('contact')}
+        <a 
+       {/* onClick={() => scrollToSection('contact')} */}
+        href='#contact'
           className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-10 py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-lg font-semibold transform hover:scale-105"
         >
           Schedule Your First Session
-        </Button>
+        </a>
       </div>
     </div>
   </section>
